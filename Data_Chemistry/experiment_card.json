@@ -1,0 +1,103 @@
+{
+  "name": "Photocatalytic Hydrogen Production",
+  "domain": "Chemistry",
+  "description": "The experiment is about maximizing the rate of hydrogen production from a photocatalyst mixture of different chemicals in water. The mixture is exposed to ultraviolet and visible light to generate hydrogen, and the amount produced is measured using gas chromatography. The goal is to enhance the hydrogen evolution rate (HER) in µmol/h through modifying the quantity of the chemicals such as adjustments to pH, ionic strength, addition of dyes and surfactants and so on, in the mixture.",
+  "constraints": {
+    "intra-point": [
+      {
+        "name": "Total Volume",
+        "description": "The sum of all parameters excluding P10 should not exceed 5mL to fit inside the vial.",
+        "operator": "<=",
+        "weights": {
+          "AcidRed871": 1,
+          "LCysteine": 1,
+          "MethyleneBlue": 1,
+          "NaCl": 1,
+          "NaOH": 1,
+          "PVP": 1,
+          "RhodamineB1": 1,
+          "SDS": 1,
+          "Sodiumsilicate": 1
+        },
+        "value": 5
+      }
+    ]
+  },
+  "parameters": [
+    {
+      "name": "AcidRed871",
+      "description": "A dye that could be used as a photosensitizer or to study dye degradation efficiency under photocatalytic conditions",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "LCysteine",
+      "description": "An amino acid that can act as a hole scavenger in photocatalytic processes, potentially enhancing hydrogen production by improving charge separation efficiency",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "MethyleneBlue",
+      "description": "Methylene blue dye",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "NaCl",
+      "description": "Sodium chloride",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "NaOH",
+      "description": "A strong base",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "P10",
+      "description": "A photocatalyst that is a conjugated polymer and shows good Hydrogen Evolution Rate",
+      "bounds": [1, 5],
+      "unit": "mg",
+      "step": 0.2
+    },
+    {
+      "name": "PVP",
+      "description": "Polyvinylpyrrolidone",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "RhodamineB1",
+      "description": "Rhodamine dye",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "SDS",
+      "description": "Sodium dodecyl sulphate",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    },
+    {
+      "name": "Sodium disilicate",
+      "description": "Another strong base",
+      "bounds": [0, 5],
+      "unit": "mL",
+      "step": 0.25
+    }
+  ],
+  "target": {
+    "name": "Hydrogen Evolution Rate",
+    "description": "The rate of hydrogen production in the photocatalytic system.",
+    "unit": "µmol/h"
+  }
+}
