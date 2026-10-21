@@ -1,0 +1,10 @@
+torch
+torchvision
+scikit-learn
+numpy
+matplotlib
+pandas
+Transformers
+sentence-transformers
+tqdm
+"accelerate>=0.26.0"
