@@ -1,0 +1,21 @@
+
+Total number of candidates available: 5565
+
+
+
+When the initial candidate set is set to 300 (Results file: Qwen2.5-3B-I_T5_300.json) for a single test data:
+Total Execution time: 205.208112 seconds
+
+
+
+When the initial candidate set is set to 5000 (Results file: Qwen2.5-3B-I_T5_5000.json) for a single test data:
+Total Execution time: 344.884518 seconds
+
+
+When the initial candidate set is set to 5000, T set to 10 (Results file: Qwen2.5-3B-I_T10_5000.json) for a single test data:
+Execution time: 459.943315 seconds
+Success at turn 6
+
+When the initial candidate set is set to 5000, T set to 15 (Results file: Qwen2.5-3B-I_T10_5000.json) for a single test data:
+Execution time: 400.484450 seconds
+

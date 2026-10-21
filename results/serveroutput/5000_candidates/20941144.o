@@ -1,0 +1,40 @@
+Sat Sep 19 12:33:05 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   30C    P0             60W /  400W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+0,
+1
+Using GPUs: 0,
+============================================================
+Dataset: beauty
+System LLM: Qwen/Qwen2.5-3B-Instruct
+User simulator LLM: Qwen/Qwen2.5-1.5B-Instruct
+Device: cuda
+============================================================
+Loading sentence-BERT: all-MiniLM-L6-v2...
+Loading cached embeddings: lavic_all_beauty_all
+top k candiates 5000
+************************** 5565
+Loading model: Qwen/Qwen2.5-1.5B-Instruct...
+Model loaded: Qwen/Qwen2.5-1.5B-Instruct
+Loading model: Qwen/Qwen2.5-3B-Instruct...
+Model loaded: Qwen/Qwen2.5-3B-Instruct
+
+Saved to: results/beauty/Qwen2.5-3B-I_T5.json
+Execution time: 344.884518 seconds
